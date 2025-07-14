@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ddd;
+    font-family: "Poppins", sans-serif;
+
+}
+header{
+    width: 100%;
+    background-color: #fff;
+    
+}
+.container{
+    width: 1200px;
+    margin: auto;
+    padding-block: 30px;
+}
+.profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile-left{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.profile-left h1{
+    color: #333;
+    font-size: 1.8rem;
+}
+
+.icon{
+    display: flex;
+    list-style-type: none;
+}
+
+.icon i{
+    font-size: 1rem;
+    padding: 8px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    margin-inline: 3px;
+    background-color: #9b9696;
+    color: white;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;    
+}
+.contact .dark-mode{
+    margin-bottom: 10px;
+    color: #444;
+
+}
+.contact a{
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    background-color: rgb(141, 201, 52);
+    color: white;
+}
+
+.contact i{
+    font-size: 1.2rem;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.col-8{
+    width: 66.66666666666667%;
+}
+.col-4{
+    width: 33.33333333333333%;
+}
+
+.about-me{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 1rem;
+}
+.about-me h1{
+    padding-block: 10px;
+    font-size: 1.6rem;
+    color: #444;
+}
+.about-me p{
+    font-size: 15px;
+}
+
+
+.address{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.address .location , .email , .link{
+    padding-block: 5px;
+    color: #9e9b9b;
+}
+
+.address a{
+    text-decoration: none;
+    color: green;
+}
+.address span{
+    color: #333;
+}
+
+/* last-pro */
+
+.last-project{
+    flex-direction: column;
+    display: flex;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    align-items: center;
+}
+
+
+.last-project h1{
+    font-size: 1.6rem;
+    padding-block: 10px;
+    color: #444;
+}
+
+.last-project .image img{
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.last-project .title h3{
+    text-align: center;
+    padding-block: 10px;
+    color: #444;
+}
+.last-project .title p{
+    font-size: 15px;
+}
+.last-project button{
+    width: 200px;
+    padding-block: 8px;
+    border-radius: 5px;
+    border: inherit;
+    background-color: rgb(30, 195, 195);
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 30px;
+
+}
+
+
+.border{
+    width: 95%;
+    height: 2px;
+    background-color: #999;
+}
+
+.card-project{
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.card-project  img{
+    object-fit: cover;
+}
+
+.card-project .card-title{
+    padding-inline: 20px;
+}
+.card-title h3{
+    font-size: 1rem;
+    color: #444;
+    padding-block: 5px;
+}
+
+.card-title p{
+    font-size: 15px;
+}
