@@ -2,16 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>James Lee Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- font -->
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" />
+
 </head>
 
 <body>
@@ -20,11 +23,11 @@
             <div class="profile">
                 <div class="profile-left">
                     <div class="image">
-                        <img src="image/profile.png" alt="profile">
+                        <img src="image/profile.png" alt="profile" />
                     </div>
                     <div class="profile-detail">
                         <h1>James Lee</h1>
-                        <span>Web Developer</span>
+                        <h3>Web Developer</h3>
                         <ul class="icon">
                             <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
                             <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
@@ -34,12 +37,18 @@
                         </ul>
                     </div>
                 </div>
+
                 <div class="contact">
                     <div class="dark-mode">
-                        <i class="fa-solid fa-toggle-on"></i>
+                        <div class="switch-wrapper">
+                            <input type="checkbox" class="switch" id="switch-basic-1" />
+                        </div>
                         <span>Dark Mode</span>
                     </div>
-                    <a href="#"><i class="fa-brands fa-telegram"></i> <span>Contact Me</span></a>
+                    <a href="#">
+                        <i class="fa-brands fa-telegram"></i>
+                        <span>Contact Me</span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -48,148 +57,169 @@
     <main>
         <div class="container">
             <div class="row">
+                <!-- Left Column -->
                 <div class="col-8">
-                    <div class="about-me">
+                    <section class="about-me">
                         <h1>About Me</h1>
                         <p>
-                            Write a brief intro about yourself. It's a good idea to include your personal interests and
-                            hobbies as well. Lorem ipsum
-                            dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
-                            massa. Cum sociis natoque
-                            penatibus et magnis dis parturient
-                            eget dolor. Aenean massa.
-
-
+                            Write a brief intro about yourself. It's a good idea to include
+                            your personal interests and hobbies as well. Lorem ipsum dolor
+                            sit amet, consectetuer adipiscing elit. Aenean commodo ligula
+                            eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
+                            dis parturient eget dolor. Aenean massa.
                         </p>
-                    </div>
+                    </section>
 
-                    <div class="latest-project">
-                        <h1>latest Projects</h1>
+                    <section class="latest-project">
+                        <h1>Latest Projects</h1>
                         <div class="image">
-                            <img src="image/project-featured.jpg" alt="">
+                            <img src="image/project-featured.jpg" alt="Featured Project" />
                         </div>
-                        <div class="last-project title">
-                            <h3>launch - The Perfect Bootstrap templet for SaaS products</h3>
+                        <article class="last-project title">
+                            <h3>
+                                Launch - The Perfect Bootstrap template for SaaS products
+                            </h3>
                             <p>
-                                You can pomote your main projeet here, Suspendie in tellus dolur, Vivemuy a tortor ou
-                                turpis phrctra comequet
-                                quis non metus. Allouum aliquam, orci eu suscipit pellentesque, mauris dul tincidunt
-                                enim. egct laculis ante dolor non
-                                ad minima veniam, quis nostrum exercitalionem ullam corporiss
+                                You can promote your main project here. Suspendisse in tellus
+                                dolor, Vivamus a tortor ou turpis pharetra consequat quis non
+                                metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris
+                                dui tincidunt enim. Eget iaculis ante dolor non ad minima
+                                veniam, quis nostrum exercitationem ullam corporis.
                             </p>
-                        </div>
+                        </article>
+
                         <div class="wrapper-btn">
-                            <button type="button"><i class="fa-solid fa-thumbs-up"></i> LIKE MY PROJECT</button>
+                            <button type="button">
+                                <i class="fa-solid fa-thumbs-up"></i> LIKE MY PROJECT
+                            </button>
                         </div>
 
                         <div class="border"></div>
 
                         <div class="wrapper-card">
-                            <div class="card-project">
+                            <!-- Project Card 1 -->
+                            <article class="card-project">
                                 <div class="col-4">
                                     <div class="image">
-                                        <img src="image/project-1.png" alt="project-1">
+                                        <img src="image/project-1.png" alt="Project 1" />
                                     </div>
                                 </div>
                                 <div class="col-8">
                                     <div class="card-title">
-                                        <h3>CoderPro - Boootstrap Startup Template For Softwareprojects</h3>
-                                        <p>
-                                            You con put one of your sccondary projects here. Suspendlssc in tellus
-                                            dolor.
-                                            s here. Suspendisse in tellus dolor.
-                                            Vivamus a tortor ou turpis pharetra consequat quis non metus. Aliquam
-                                            aliquam. orci eu suscipit pellentesque, mauris dui tincidunt enim. cget
-                                            iaculis
-                                            ante dolor non turpis.
-                                        </p>
-                                        <div class="arrow-find">
-                                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                                <span>Find Out more</span></a>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="card-project">
-                                <div class="col-4">
-                                    <div class="image">
-                                        <img src="image/project-2.png" alt="project-1">
-                                    </div>
-                                </div>
-                                <div class="col-8">
-                                    <div class="card-title">
-                                        <h3>DevCard - Boootstrap Portfolio Template for SoftwareDevelopers</h3>
-                                        <p>
-                                            You can put one of your secondary projects here. Suspendisse in tellus
-                                            dolor.
-                                            fVivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam
-                                            aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget
-                                            iaculis
-                                            ante dolor non turpis.
-                                        </p>
-                                        <div class="arrow-find">
-                                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                                <span>Find Out more</span></a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card-project">
-                                <div class="col-4">
-                                    <div class="image">
-                                        <img src="image/project-3.png" alt="project-1">
-                                    </div>
-                                </div>
-                                <div class="col-8">
-                                    <div class="card-title">
-                                        <h3>Instance - Boootstrap Portfolio Template for Aspiring FullStack Developers
+                                        <h3>
+                                            CoderPro - Bootstrap Startup Template For Software Projects
                                         </h3>
                                         <p>
-                                            You can put one of your secondary projects here. Suspendisse in tellus
-                                            dolor.
-                                            Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam
-                                            aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget
-                                            iaculis
-                                            ante dolor non turpis.
+                                            You can put one of your secondary projects here.
+                                            Suspendisse in tellus dolor. Vivamus a tortor ou turpis
+                                            pharetra consequat quis non metus. Aliquam aliquam, orci
+                                            eu suscipit pellentesque, mauris dui tincidunt enim,
+                                            eget iaculis ante dolor non turpis.
                                         </p>
                                         <div class="arrow-find">
-                                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i>
-                                                <span>Find Out more</span></a>
+                                            <a href="#">
+                                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                                <span>Find Out More</span>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
+                            </article>
 
+                            <!-- Project Card 2 -->
+                            <article class="card-project">
+                                <div class="col-4">
+                                    <div class="image">
+                                        <img src="image/project-2.png" alt="Project 2" />
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-title">
+                                        <h3>
+                                            DevCard - Bootstrap Portfolio Template for Software Developers
+                                        </h3>
+                                        <p>
+                                            You can put one of your secondary projects here.
+                                            Suspendisse in tellus dolor. Vivamus a tortor eu turpis
+                                            pharetra consequat quis non metus. Aliquam aliquam, orci
+                                            eu suscipit pellentesque, mauris dui tincidunt enim,
+                                            eget iaculis ante dolor non turpis.
+                                        </p>
+                                        <div class="arrow-find">
+                                            <a href="#">
+                                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                                <span>Find Out More</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <!-- Project Card 3 -->
+                            <article class="card-project">
+                                <div class="col-4">
+                                    <div class="image">
+                                        <img src="image/project-3.png" alt="Project 3" />
+                                    </div>
+                                </div>
+                                <div class="col-8">
+                                    <div class="card-title">
+                                        <h3>
+                                            Instance - Bootstrap Portfolio Template for Aspiring Full-Stack Developers
+                                        </h3>
+                                        <p>
+                                            You can put one of your secondary projects here.
+                                            Suspendisse in tellus dolor. Vivamus a tortor eu turpis
+                                            pharetra consequat quis non metus. Aliquam aliquam, orci
+                                            eu suscipit pellentesque, mauris dui tincidunt enim,
+                                            eget iaculis ante dolor non turpis.
+                                        </p>
+                                        <div class="arrow-find">
+                                            <a href="#">
+                                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                                <span>Find Out More</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
                         </div>
-                    </div>
+                    </section>
                 </div>
 
                 <div class="col-4">
-                    <div class="address-card">
-                        <div class="location"><i class="fa-solid fa-location-dot"></i><span> San Francisco, US</span>
+                    <!-- Address Card -->
+                    <section class="address-card">
+                        <div class="location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>San Francisco, US</span>
                         </div>
-                        <div class="email"><i class="fa-solid fa-envelope"></i> <a href="#"> jamelee@website.com</a>
+                        <div class="email">
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:jamelee@website.com">jamelee@website.com</a>
                         </div>
-                        <div class="link"><i class="fa-solid fa-link"></i> <a href="#"> https//www.website.com</a></div>
-                    </div>
+                        <div class="link">
+                            <i class="fa-solid fa-link"></i>
+                            <a href="#">https://www.website.com</a>
+                        </div>
+                    </section>
 
-                    <div class="skills-card">
+                    <!-- Skills Card -->
+                    <section class="skills-card">
                         <h1>Skills</h1>
                         <p>
-                            Intro about your skills goes here. Keep the list lean
-                            and only show your primary skillset. You can always
-                            provide a link to your Linkedin or Github profile so
-                            people can get more info there.
+                            Intro about your skills goes here. Keep the list lean and only
+                            show your primary skillset. You can always provide a link to
+                            your Linkedin or Github profile so people can get more info
+                            there.
                         </p>
 
                         <div class="skills-rate">
                             <div class="language">
-                                <h3>Phython & Django</h3>
+                                <h3>Python &amp; Django</h3>
                                 <div class="icon-text">
-                                    <i class="fa-solid fa-exclamation"></i><span>Expert</span>
+                                    <i class="fa-solid fa-exclamation"></i>
+                                    <span>Expert</span>
                                 </div>
                             </div>
                             <div class="rate-overlay"></div>
@@ -197,76 +227,90 @@
 
                         <div class="skills-rate">
                             <div class="language">
-                                <h3>javascript & JQuery</h3>
+                                <h3>JavaScript &amp; jQuery</h3>
                                 <div class="icon-text">
-                                    <i class="fa-solid fa-exclamation"></i><span>Expert</span>
+                                    <i class="fa-solid fa-exclamation"></i>
+                                    <span>Expert</span>
                                 </div>
                             </div>
                             <div class="rate-overlay"></div>
                         </div>
+
                         <div class="skills-rate">
                             <div class="language">
-                                <h3>HTML5,CSS3,SAAS & LESS</h3>
+                                <h3>HTML5, CSS3, SASS &amp; LESS</h3>
                                 <div class="icon-text">
-                                    <i class="fa-solid fa-exclamation"></i><span>Expert</span>
+                                    <i class="fa-solid fa-exclamation"></i>
+                                    <span>Expert</span>
                                 </div>
                             </div>
                             <div class="rate-overlay"></div>
                         </div>
+
                         <div class="skills-rate">
                             <div class="language">
                                 <h3>Ruby on Rails</h3>
                                 <div class="icon-text">
-                                    <i class="fa-solid fa-exclamation"></i><span>Expert</span>
+                                    <i class="fa-solid fa-exclamation"></i>
+                                    <span>Expert</span>
                                 </div>
                             </div>
                             <div class="rate-overlay"></div>
+
                             <div class="arrow-find">
-                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span>More on
-                                        Github</span></a>
+                                <a href="#">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <span>More on Github</span>
+                                </a>
                             </div>
                         </div>
-                    </div>
+                    </section>
 
-                    <div class="testimonials-card">
+                    <!-- Testimonials Card -->
+                    <section class="testimonials-card">
                         <div class="quote">
                             <div class="wrapper-quote">
-                                <i class="fa-solid fa-quote-left"></i>&nbsp;&nbsp;
+                                <i class="fa-solid fa-quote-left"></i>
+                                &nbsp;&nbsp;
                                 <span>
-                                    James is an excellent software engineer and
-                                    he is passionate about what he does. You can
-                                    totally count on him to deliver your projects!
+                                    James is an excellent software engineer and he is passionate
+                                    about what he does. You can totally count on him to deliver
+                                    your projects!
                                 </span>
                             </div>
                             <div class="user-testimonial">
                                 <h5>Tim Adams</h5>
-                                <span>Curabitur commondo</span>
+                                <span>Curabitur commodo</span>
                             </div>
                             <div class="arrow-find">
-                                <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> <span>More on
-                                        Github</span></a>
+                                <a href="#">
+                                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                                    <span>More on Github</span>
+                                </a>
                             </div>
                         </div>
-                    </div>
+                    </section>
 
-                    <div class="education-card">
+                    <!-- Education Card -->
+                    <section class="education-card">
                         <h1>Education</h1>
                         <div class="location-university">
-                            <i class="fa-solid fa-building-columns"></i>&nbsp;
-                            <span>MSc Computer Science</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <span>University College London(2018-2019)</span>
+                            <i class="fa-solid fa-building-columns"></i>
+                            <span>MSc Computer Science</span><br />
+                            <span>University College London (2018–2019)</span>
                         </div>
                         <div class="location-university">
-                            <i class="fa-solid fa-building-columns"></i>&nbsp;
-                            <span>MSc Computer Science</span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <span>University Of Bistol(2014-2018)</span>
+                            <i class="fa-solid fa-building-columns"></i>
+                            <span>MSc Computer Science</span><br />
+                            <span>University of Bristol (2014–2018)</span>
                         </div>
-                    </div>
+                    </section>
 
-                    <div class="language-card">
-                        <h1>Education</h1>
+                    <!-- Language Card -->
+                    <section class="language-card">
+                        <h1>Languages</h1>
                         <div class="english">
-                            <p><strong>English : </strong> Native Speaker</p>
+                            <p><strong>English:</strong> Native Speaker</p>
                             <div class="star">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -275,8 +319,9 @@
                                 <i class="fa-solid fa-star"></i>
                             </div>
                         </div>
+
                         <div class="spanish">
-                            <p><strong>Spainish : </strong> Native Speaker</p>
+                            <p><strong>Spanish:</strong> Native Speaker</p>
                             <div class="star">
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
@@ -285,7 +330,7 @@
                                 <i class="fa-solid fa-star-half"></i>
                             </div>
                         </div>
-                    </div>
+                    </section>
                 </div>
             </div>
         </div>

@@ -4,12 +4,22 @@
     box-sizing: border-box;
 }
 
+:root {
+    --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    --font-dark-400: #444;
+    --font-dark-700: #777;
+    --font-muted: #9e9b9b;
+    --font-white: #fff;
+    --font-primary: rgb(45, 177, 45);
+    --font-primary-rgba: rgba(45, 177, 45, 0.5);
+}
+
 body {
     background-color: #ddd;
     font-family: "Poppins", sans-serif;
 }
 
-/* wrap background and shawdow */
+/* Wrap backgrounds and shadows */
 .about-me,
 .address-card,
 .latest-project,
@@ -18,45 +28,51 @@ body {
 .education-card,
 .language-card {
     padding: 20px;
-    background-color: #fff;
+    background-color: var(--font-white);
     border-radius: 5px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: var(--box-shadow);
     margin-bottom: 1rem;
 }
 
+/* Typography */
 p, span {
     font-size: 14px;
 }
 
+/* Header */
 header {
     width: 100%;
-    background-color: #fff;
-
+    background-color: var(--font-white);
 }
 
+/* Container */
 .container {
     width: 1200px;
     margin: auto;
     padding-block: 30px;
 }
 
+/* Profile section */
 .profile {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.profile-left {
+/* Profile left */
+.profile .profile-left {
     display: flex;
     align-items: center;
     gap: 20px;
 }
 
+/* Profile-left content */
 .profile-left h1 {
-    color: #333;
+    color: var(--font-dark-400);
     font-size: 1.8rem;
 }
 
+/* Profile-left icons */
 .profile-left .icon {
     display: flex;
     list-style-type: none;
@@ -69,45 +85,49 @@ header {
     border-radius: 50%;
     margin-inline: 3px;
     background-color: #9b9696;
-    color: white;
+    color: var(--font-white);
 }
 
-.contact{
+/* Contact section */
+.contact {
     display: flex;
     flex-direction: column;
 }
 
+/* Dark mode inside contact */
 .contact .dark-mode {
     display: flex;
-    align-items: center;
     margin-bottom: 10px;
-    color: #444;
-}
-.contact .dark-mode span{
-    color: #444;
-    font-weight: 500;
-}
-.contact span{
-    color: #fff;
+    color: var(--font-dark-400);
 }
 
-.contact a{
+.contact .dark-mode span {
+    color: var(--font-dark-400);
+    font-size: 1rem;
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+.contact span {
+    color: var(--font-white);
+}
+
+.contact a {
     text-decoration: none;
     padding: 8px 10px;
     border-radius: 5px;
-    background-color: rgb(45, 177, 45);
-    color: white;
+    background-color: var(--font-primary);
+    color: var(--font-white);
     display: flex;
     align-items: center;
 }
 
-.contact i{
+.contact i {
     font-size: 1.5rem;
     margin-inline: 5px;
 }
 
-
-
+/* Layout rows and columns */
 .row {
     display: flex;
     justify-content: space-between;
@@ -115,30 +135,28 @@ header {
 }
 
 .col-8 {
-    width: 66.66666666666667%;
+    width: 66.6667%;
 }
 
 .col-4 {
-    width: 33.33333333333333%;
+    width: 33.3333%;
 }
 
+/* Address card content */
 .address-card .location,
-.email,
-.link {
+.address-card .email,
+.address-card .link {
     padding-block: 5px;
-    color: #9e9b9b;
+    color: var(--font-muted);
 }
 
 .address-card a {
     text-decoration: none;
-    color: green;
+    color: var(--font-primary);
     font-size: 14px;
 }
 
-
-
-/* latest-pro */
-
+/* Latest project */
 .latest-project .image img {
     width: 100%;
     border-radius: 5px;
@@ -148,13 +166,14 @@ header {
 .latest-project .title h3 {
     text-align: center;
     padding-block: 10px;
-    color: #444;
+    color: var(--font-dark-400);
 }
 
+/* Button wrapper */
 .wrapper-btn {
     display: flex;
     justify-content: center;
-    padding-block: 20px;    
+    padding-block: 20px;
 }
 
 .latest-project button {
@@ -163,160 +182,210 @@ header {
     border-radius: 5px;
     border: inherit;
     background-color: rgb(30, 195, 195);
-    color: #fff;
+    color: var(--font-white);
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     cursor: pointer;
 }
+
+/* Border */
 .border {
     width: 95%;
     height: 2px;
     background-color: #999;
 }
 
-.card-project {
+/* Project cards */
+.wrapper-card .card-project {
     display: flex;
     width: 100%;
     margin-bottom: 20px;
 }
 
-.card-project img {
+/* Images inside project cards */
+.card-project .col-4 .image img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.card-project .card-title {
+/* Card title inside project cards */
+.card-project .col-8 .card-title {
     padding-inline: 20px;
 }
 
 .card-title h3 {
     font-size: 1rem;
-    color: #444;
+    color: var(--font-dark-400);
     padding-block: 5px;
 }
 
-
-.card-title .arrow-find a{
+.card-title .arrow-find a {
     text-decoration: none;
-    color: rgb(45, 177, 45);
+    color: var(--font-primary);
     font-size: 15px;
     padding-block: 5px;
     display: block;
 }
-/* skills */
-.skills-rate .language{ 
+
+/* Skills section */
+.skills-rate .language {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-block: 10px;
     margin-bottom: 5px;
 }
-.language h3{
-    color: #444;
+
+.language h3 {
+    color: var(--font-dark-400);
     font-size: 1rem;
 }
 
-.language i{
+.language i {
     padding: 4px 9px;
     font-size: 0.8rem;
     border-radius: 50%;
-    color: #fff;
+    color: var(--font-white);
     margin-inline: 5px;
     background-color: #9e9b9b;
 }
 
-.skills-rate .rate-overlay{
+/* Skills rate bar */
+.skills-rate .rate-overlay {
     width: 100%;
     height: 18px;
     background-color: #9b9696;
     border-radius: 8px;
     position: relative;
 }
-.skills-rate .rate-overlay::before{
+
+.skills-rate .rate-overlay::before {
     content: "";
     width: 95%;
     height: 18px;
-    background-color: rgba(45, 177, 45,0.6);
+    background-color: var(--font-primary-rgba);
     position: absolute;
     left: 0;
     top: 0;
-    border-radius: 8px 0px 0px 8px;
+    border-radius: 8px 0 0 8px;
 }
-.skills-rate .arrow-find a , .testimonials-card .quote a{
+
+/* Links in skills and testimonials */
+.skills-rate .arrow-find a,
+.testimonials-card .quote a {
     text-decoration: none;
-    color: rgb(45, 177, 45);
+    color: var(--font-primary);
     font-size: 17px;
     padding-block: 10px;
     display: block;
 }
 
-
-/* testimonial */
-
+/* Testimonials */
 .testimonials-card .wrapper-quote {
-    border-left: 5px solid rgba(45, 177, 45,0.5);
+    border-left: 5px solid var(--font-primary-rgba);
     padding: 10px;
 }
-.testimonials-card .wrapper-quote i{
-    color: rgb(45, 177, 45);
+
+.testimonials-card .wrapper-quote i {
+    color: var(--font-primary);
 }
 
-
-.testimonials-card .quote .user-testimonial{
+.testimonials-card .quote .user-testimonial {
     padding: 5px 20px;
 }
-.quote .user-testimonial h5 , span  {
+
+.quote .user-testimonial h5,
+.quote .user-testimonial span {
     font-size: 0.8rem;
-    color: #444;
+    color: var(--font-dark-400);
 }
 
-
-/* education */
-
-
-
-.education-card .location-university{
+/* Education */
+.education-card .location-university {
     padding-block: 10px;
-
 }
-.education-card .location-university span{
+
+.education-card .location-university span {
     font-size: 14px;
-    color: #777;
+    color: var(--font-dark-700);
     font-weight: 700;
 }
-.education-card .location-university i{
+
+.education-card .location-university i {
     font-size: 1rem;
-    color: #666;
+    color: var(--font-dark-700);
 }
 
-/* language */
-
-.language-card h1{
+/* Language card */
+.language-card h1 {
     font-size: 1.6rem;
     padding-block: 10px;
-    color: #444;
+    color: var(--font-dark-400);
 }
+
 .language-card .english,
 .language-card .spanish,
 .language-card p,
 .language-card strong {
-    color: #444;
+    color: var(--font-dark-400);
     font-size: 14px;
-}   
-.language-card .star i{
-    padding-block: 10px;
-    font-size: 1rem ;
-    color: rgba(45, 177, 45,0.5);
 }
 
-/* wrap h1 tittle of content */
+.language-card .star i {
+    padding-block: 10px;
+    font-size: 1rem;
+    color: var(--font-primary-rgba);
+}
+
+/* Section headers */
 .about-me h1,
 .skills-card h1,
 .education-card h1,
 .language-card h1,
-.latest-project h1{ 
-font-size: 1.6rem;
+.latest-project h1 {
+    font-size: 1.6rem;
     padding-block: 10px;
-    color: #444;
+    color: var(--font-dark-400);
+}
+
+/* Toggle dark mode switch */
+.switch-wrapper .switch {
+    appearance: none;
+    background-color: #dfe1e4;
+    border-radius: 50px;
+    width: 50px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    border: none;
+}
+
+.switch-wrapper .switch::after {
+    content: "\f185"; /* Sun icon */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    background-color: #fff;
+    color: #FFD43B;
+    border-radius: 50%;
+    font-size: 12px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: all 0.3s ease;
+}
+
+.switch-wrapper .switch:checked {
+    background-color: #000;
+}
+
+.switch-wrapper .switch:checked::after {
+    content: "\f186"; /* Moon icon */
+    left: 28px;
+    color: #000;
 }
