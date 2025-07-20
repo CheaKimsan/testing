@@ -5,21 +5,38 @@
 }
 
 :root {
-    --box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    --font-dark-400: #444;
-    --font-dark-700: #777;
+    --box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    --dark-400: #444;
+    --dark-700: #777;
     --font-muted: #9e9b9b;
-    --font-white: #fff;
-    --font-primary: rgb(45, 177, 45);
-    --font-primary-rgba: rgba(45, 177, 45, 0.5);
+    --bg-dark: #fff;
+    --font-green: rgb(45, 177, 45);
+    --font-green-rgba: rgba(45, 177, 45, 0.5);
+    --bg-color: #ddd;
+    --color-bg: #ddd;
+    --color-fg: #000000;
+
+}
+
+[data-theme="dark"] {
+    --color-bg: #000000;
+    --color-fg: #ffffff;
+    --bg-dark: #111111;
+    --dark-400: #dddddd;
+    --font-white-700: #bbbbbb;
+    --font-muted: #888888;
+    --font-green: rgb(45, 177, 45);
+    --font-green-rgba: rgba(45, 177, 45, 0.5);
+    --bg-color: #000000;
 }
 
 body {
-    background-color: #ddd;
+    background-color: var(--bg-color);
+    color: var(--color-fg);
     font-family: "Poppins", sans-serif;
 }
 
-/* Wrap backgrounds and shadows */
+/* Cards and wrappers */
 .about-me,
 .address-card,
 .latest-project,
@@ -28,24 +45,24 @@ body {
 .education-card,
 .language-card {
     padding: 20px;
-    background-color: var(--font-white);
+    background-color: var(--bg-dark);
     border-radius: 5px;
     box-shadow: var(--box-shadow);
     margin-bottom: 1rem;
 }
 
-/* Typography */
+
+
+/* defualt size p and span*/
 p, span {
     font-size: 14px;
 }
 
-/* Header */
 header {
     width: 100%;
-    background-color: var(--font-white);
+    background-color: var(--bg-dark);
 }
 
-/* Container */
 .container {
     width: 1200px;
     margin: auto;
@@ -68,7 +85,7 @@ header {
 
 /* Profile-left content */
 .profile-left h1 {
-    color: var(--font-dark-400);
+    color: var(--dark-400);
     font-size: 1.8rem;
 }
 
@@ -85,49 +102,48 @@ header {
     border-radius: 50%;
     margin-inline: 3px;
     background-color: #9b9696;
-    color: var(--font-white);
+    color: var(--bg-dark);
 }
 
-/* Contact section */
-.contact {
+
+.profile .contact {
     display: flex;
     flex-direction: column;
 }
 
 /* Dark mode inside contact */
-.contact .dark-mode {
+.profile .contact .dark-mode {
     display: flex;
     margin-bottom: 10px;
-    color: var(--font-dark-400);
+    color: var(--dark-400);
 }
 
-.contact .dark-mode span {
-    color: var(--font-dark-400);
+.profile .contact .dark-mode span {
+    color: var(--dark-400);
     font-size: 1rem;
     margin-left: 5px;
     font-weight: 500;
 }
 
-.contact span {
-    color: var(--font-white);
+
+.profile .contact span {
+    color: var(--bg-dark);
 }
 
-.contact a {
+.profile .contact a {
     text-decoration: none;
     padding: 8px 10px;
     border-radius: 5px;
-    background-color: var(--font-primary);
-    color: var(--font-white);
+    background-color: var(--font-green);
     display: flex;
     align-items: center;
 }
 
-.contact i {
+.profile .contact i {
     font-size: 1.5rem;
     margin-inline: 5px;
 }
 
-/* Layout rows and columns */
 .row {
     display: flex;
     justify-content: space-between;
@@ -152,7 +168,7 @@ header {
 
 .address-card a {
     text-decoration: none;
-    color: var(--font-primary);
+    color: var(--font-green);
     font-size: 14px;
 }
 
@@ -166,7 +182,7 @@ header {
 .latest-project .title h3 {
     text-align: center;
     padding-block: 10px;
-    color: var(--font-dark-400);
+    color: var(--dark-400);
 }
 
 /* Button wrapper */
@@ -182,7 +198,7 @@ header {
     border-radius: 5px;
     border: inherit;
     background-color: rgb(30, 195, 195);
-    color: var(--font-white);
+    color: var(--bg-dark);
     font-family: "Poppins", sans-serif;
     font-weight: 700;
     cursor: pointer;
@@ -192,6 +208,7 @@ header {
 .border {
     width: 95%;
     height: 2px;
+    margin-bottom: 20px;
     background-color: #999;
 }
 
@@ -216,13 +233,13 @@ header {
 
 .card-title h3 {
     font-size: 1rem;
-    color: var(--font-dark-400);
+    color: var(--dark-400);
     padding-block: 5px;
 }
 
 .card-title .arrow-find a {
     text-decoration: none;
-    color: var(--font-primary);
+    color: var(--font-green);
     font-size: 15px;
     padding-block: 5px;
     display: block;
@@ -238,7 +255,7 @@ header {
 }
 
 .language h3 {
-    color: var(--font-dark-400);
+    color: var(--dark-400);
     font-size: 1rem;
 }
 
@@ -246,7 +263,7 @@ header {
     padding: 4px 9px;
     font-size: 0.8rem;
     border-radius: 50%;
-    color: var(--font-white);
+    color: var(--bg-dark);
     margin-inline: 5px;
     background-color: #9e9b9b;
 }
@@ -264,7 +281,7 @@ header {
     content: "";
     width: 95%;
     height: 18px;
-    background-color: var(--font-primary-rgba);
+    background-color: var(--font-green-rgba);
     position: absolute;
     left: 0;
     top: 0;
@@ -275,7 +292,7 @@ header {
 .skills-rate .arrow-find a,
 .testimonials-card .quote a {
     text-decoration: none;
-    color: var(--font-primary);
+    color: var(--font-green);
     font-size: 17px;
     padding-block: 10px;
     display: block;
@@ -283,12 +300,12 @@ header {
 
 /* Testimonials */
 .testimonials-card .wrapper-quote {
-    border-left: 5px solid var(--font-primary-rgba);
+    border-left: 5px solid var(--font-green-rgba);
     padding: 10px;
 }
 
 .testimonials-card .wrapper-quote i {
-    color: var(--font-primary);
+    color: var(--font-green);
 }
 
 .testimonials-card .quote .user-testimonial {
@@ -298,7 +315,7 @@ header {
 .quote .user-testimonial h5,
 .quote .user-testimonial span {
     font-size: 0.8rem;
-    color: var(--font-dark-400);
+    color: var(--dark-400);
 }
 
 /* Education */
@@ -308,34 +325,34 @@ header {
 
 .education-card .location-university span {
     font-size: 14px;
-    color: var(--font-dark-700);
+    color: var(--dark-700);
     font-weight: 700;
 }
 
 .education-card .location-university i {
     font-size: 1rem;
-    color: var(--font-dark-700);
+    color: var(--dark-700);
 }
 
 /* Language card */
 .language-card h1 {
     font-size: 1.6rem;
     padding-block: 10px;
-    color: var(--font-dark-400);
+    color: var(--dark-400);
 }
 
 .language-card .english,
 .language-card .spanish,
 .language-card p,
 .language-card strong {
-    color: var(--font-dark-400);
+    color: var(--dark-400);
     font-size: 14px;
 }
 
 .language-card .star i {
     padding-block: 10px;
     font-size: 1rem;
-    color: var(--font-primary-rgba);
+    color: var(--font-green-rgba);
 }
 
 /* Section headers */
@@ -346,7 +363,7 @@ header {
 .latest-project h1 {
     font-size: 1.6rem;
     padding-block: 10px;
-    color: var(--font-dark-400);
+    color: var(--dark-400);
 }
 
 /* Toggle dark mode switch */
@@ -381,11 +398,20 @@ header {
 }
 
 .switch-wrapper .switch:checked {
-    background-color: #000;
+    background-color: var(--font-green);
 }
 
 .switch-wrapper .switch:checked::after {
     content: "\f186"; /* Moon icon */
     left: 28px;
     color: #000;
+}
+
+
+.footer{
+    width: 100%;
+    padding: 20px;
+    background-color: var(--dark-400);
+    color: var(--color-bg);
+    text-align: center;
 }
